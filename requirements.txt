@@ -1,0 +1,6 @@
+Flask-SQLAlchemy
+flask
+pytest
+dotenv
+psycopg2
+factory_boy

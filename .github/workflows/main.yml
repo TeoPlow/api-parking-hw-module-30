@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [*]
+    branches: ['*']
   pull_request:
-    branches: [*]
+    branches: ['*']
 
 jobs:
   build:
@@ -27,6 +27,9 @@ jobs:
         run: |
           flake8 . --max-line-length 88
           black . --check
+
+      - name: Set up SQLite database
+        run: touch test.db
 
       - name: Run tests with pytest from conftest.py
         run: |
