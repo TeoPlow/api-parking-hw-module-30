@@ -4,3 +4,5 @@ pytest
 dotenv
 psycopg2
 factory_boy
+flake8
+black
